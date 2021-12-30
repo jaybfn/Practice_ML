@@ -78,16 +78,17 @@ try:
     #*************************************************************************       
 
 
-    parser.add_argument('number_of_artist',help="enter number of artist lyrics to be scraped")
+    #parser.add_argument('number_of_artist',help="enter number of artist lyrics to be scraped")
 
-    parser.add_argument("--quantity",default=0,help="enter number of artist lyrics to be scraped",type=int) # now --quantity is optional
-    parser.add_argument("--list_Artist", nargs="+", default=[])
+    parser.add_argument("--quantity",default = 1, help="enter number of artist lyrics to be scraped",type=int) # now --quantity is optional
+    parser.add_argument("--list_Artist", nargs="+", default=['Akon'])
     args = parser.parse_args()
 
     number_of_artists = args.quantity
     artistlist = args.list_Artist
     
     search = 'artist'    
+
     #artistlist = ['CKay','Curtis-Mayfield']#input the artist names as metioned in the lyrics.com
     artistlist_path =['/'+ item for item in artistlist]#concatinates '/'to the artist names for accessing the html page
 
