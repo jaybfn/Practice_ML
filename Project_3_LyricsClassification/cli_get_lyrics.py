@@ -79,9 +79,9 @@ try:
 
 
     #parser.add_argument('number_of_artist',help="enter number of artist lyrics to be scraped")
-
-    parser.add_argument("--quantity",default = 1, help="enter number of artist lyrics to be scraped",type=int) # now --quantity is optional
-    parser.add_argument("--list_Artist", nargs="+", default=['Akon'])
+#
+    parser.add_argument("quantity",default = 1, help="enter number of artist lyrics to be scraped",type=int) # now --quantity is optional
+    parser.add_argument("list_Artist", nargs="+", default=['Akon'])
     args = parser.parse_args()
 
     number_of_artists = args.quantity
