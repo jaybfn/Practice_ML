@@ -28,14 +28,14 @@ b. Lyrics_Classification_RFC_25Dec2021.ipynb (ML model)
 
 Eg: type the below line on your command line interfaces with path where your python file is located.
 
-* python cli_get_lyrics.py 6 --list Eminem Jay-Z Justin-Timeberlake 50-Cent Bob-Marley Michael Jackson
+* python cli_get_lyrics.py 6 Eminem Jay-Z Justin-Timeberlake 50-Cent Bob-Marley Michael Jackson
 
 * If you just run the file without giving any input arguments, then the code would function with its default values stored
 default val: number of artist is "1" and name of the artist is "Akon".
 
 * the file 'cli_get_lyrics.py' required two input arguments to function.
 * number of artists to be scrapped (in my case I have 6)
-* name of the artists as mentioned on the lyrics.com (--list Eminem Jay-Z Justin-Timeberlake 50-Cent Bob-Marley Michael Jackson)
+* name of the artists as mentioned on the lyrics.com (Eminem Jay-Z Justin-Timeberlake 50-Cent Bob-Marley Michael Jackson)
 
 * Once scrapped, the program will store all the lyrics as .txt file in individual folder with artist names
 * eg: I scrapped 100 songs from Akon, so there will be a folder with name Akon and 100 lyrics stored in it.
